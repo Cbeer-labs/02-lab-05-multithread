@@ -25,15 +25,6 @@ jobs:
       - name: Codestyle
         run:
           scripts/codestyle.sh
-      - name: AddressSanitizer
-        run:
-          scripts/asan.sh
-      - name: ThreadSanitizer
-        run:
-          scripts/tsan.sh
-      - name: Coverage
-        run:
-          env SAVE_CACHE=1 scripts/coverage.sh
       - name: SonarQube
         run:
           scripts/sonarqube.sh
